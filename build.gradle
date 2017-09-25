@@ -1,3 +1,5 @@
+apply plugin: 'java'
+
 task testStuff(type: Exec) {
     println 'Hello Travis from Gradle'
     commandLine 'printenv'
