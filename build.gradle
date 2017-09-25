@@ -1,8 +1,11 @@
 apply plugin: 'java'
 
+task installStuff(type: Exec) {
+    println 'Installing stuff'
+}
+
 task testStuff(type: Exec) {
-    println 'Hello Travis from Gradle'
-    println 'Hello World!'
+    println 'Testing stuff'
     commandLine 'printenv'
 
     standardOutput = new ByteArrayOutputStream()
