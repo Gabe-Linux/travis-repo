@@ -2,6 +2,7 @@ apply plugin: 'java'
 
 task testStuff(type: Exec) {
     println 'Hello Travis from Gradle'
+    println 'Hello World!'
     commandLine 'printenv'
 
     standardOutput = new ByteArrayOutputStream()
