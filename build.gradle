@@ -2,6 +2,12 @@ apply plugin: 'java'
 
 task installStuff(type: Exec) {
     println 'Installing stuff'
+
+    standardOutput = new ByteArrayOutputStream()
+
+    ext.output = {
+    	return standardOutput.toString()
+    }
 }
 
 task testStuff(type: Exec) {
