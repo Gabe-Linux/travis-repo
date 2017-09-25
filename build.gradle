@@ -1,0 +1,10 @@
+task testStuff(type: Exec) {
+    println 'Hello Travis from Gradle'
+    commandLine 'printenv'
+
+    standardOutput = new ByteArrayOutputStream()
+
+    ext.output = {
+        return standardOutput.toString()
+    }
+}
