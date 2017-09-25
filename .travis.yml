@@ -1,6 +1,6 @@
 language: groovy
 sudo: false
 install:
-    _ ./gradlew installStuff
+    - ./gradlew installStuff
 script:
     - ./gradlew testStuff
